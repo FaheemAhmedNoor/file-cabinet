@@ -1,0 +1,5 @@
+<h1>All Documents!<h1>
+<% @docs.each do |doc| %>
+  <h2> <%= link_to doc.title, doc %> </h2>
+  <p> <%= doc.content %> </p> <hr>
+<% end %>

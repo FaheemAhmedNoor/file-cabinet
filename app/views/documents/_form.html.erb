@@ -1,0 +1,19 @@
+<style>
+  .form-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+<div class="form-div">
+  <%= form_with model: @doc do |form| %>
+    <%= form.label :title, "Title" %>
+    <%= form.text_field :title %>
+
+    <%= form.label :content, "Content" %>
+    <%= form.text_area :content  %>
+
+    <%= form.submit %>
+  <% end %>
+</div>
+
