@@ -1,5 +1,26 @@
-<h1>All Documents!<h1>
-<% @docs.each do |doc| %>
-  <h2> <%= link_to doc.title, doc %> </h2>
-  <p> <%= doc.content %> </p> <hr>
+<h1>All Documents!</h1>
+<%= link_to "New Document", new_document_path, class: "button" %>
+<% if @docs.any? %>
+  <table>
+    <thead>
+      <tr>
+        <td> <h3>Title </h3> </td>
+        <td> <h3>Content </h3></td>
+        <td> <h3>Actions </h3></td>
+      </tr>
+    <thead>
+    <tbody>
+      <% @docs.each do |doc| %>
+        <tr>
+          <td> <%= doc.title %> </td>
+          <td> <%= doc.content %> </td>
+          <td> <%= link_to "View", document_path(doc) %> </td>
+          <td> <%= link_to "Edit", edit_document_path(doc) %> </td>
+          <td> <%= link_to "Destroy", document_path(doc), data: {turbo_method: :delete, turbo_confirm: "Warning! Document will be permanetly deleted!"} %> </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% else %>
+  <h5>No record found</h5>
 <% end %>

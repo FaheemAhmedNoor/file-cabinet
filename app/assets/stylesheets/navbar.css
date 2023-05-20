@@ -1,0 +1,5 @@
+.navbar-main-div {
+  display: flex;
+  justify-content: end;
+  margin: 1em;
+}

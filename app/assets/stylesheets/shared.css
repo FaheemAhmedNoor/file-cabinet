@@ -1,0 +1,27 @@
+/* Button CSS */
+.button {
+  display: inline-block;
+  padding: 10px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #2cb99a;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #189d80;
+}
+
+.button:active {
+  background-color: #189d80;
+}
+
+/* Error Message Font */
+.error-messages {
+  color: red;
+}
