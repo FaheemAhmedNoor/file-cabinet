@@ -1,0 +1,7 @@
+/* form */
+.form-div form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+}
