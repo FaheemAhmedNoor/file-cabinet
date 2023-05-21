@@ -1,6 +1,6 @@
 class DocumentsController < ApplicationController
   def index
-    @docs = Document.all
+    @docs = current_user.documents.all
   end
 
   def show
