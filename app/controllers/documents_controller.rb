@@ -12,7 +12,7 @@ class DocumentsController < ApplicationController
   end
 
   def create
-    @doc = Document.new(doc_params)
+    @doc = current_user.documents.new(doc_params)
     if @doc.save!
       redirect_to documents_path
     else
