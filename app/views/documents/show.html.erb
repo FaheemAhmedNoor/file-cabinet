@@ -1,3 +1,5 @@
+<%= link_to "Back", documents_path, class: "button" %>
+
 <h1> <%= @doc.title %> </h1>
 <h2> <%= @doc.content %> </h2>
 
@@ -6,4 +8,3 @@
                     turbo_method: :delete,
                     turbo_confirm: "Warning! Document will be permanetly deleted!"
                   }, class: "button" %> <br>
-<%= link_to "Back", documents_path, class: "button" %>

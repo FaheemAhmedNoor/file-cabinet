@@ -3,5 +3,45 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 1em;
+  gap: 1rem;
+}
+
+.form-div {
+  display: flex;
+  justify-content: center;
+}
+
+.form-sub-div {
+  border: 1px solid gray;
+  padding: 3rem 1rem;
+  border-radius: 5px;
+  /* min-width: 27rem; */
+  min-width: 50%;
+}
+
+.main-heading {
+  text-align: center;
+}
+
+.link {
+  font-size: 12px;
+}
+
+table,
+td {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+table {
+  min-width: 100%;
+}
+
+thead,
+tbody {
+  text-align: center;
+}
+
+.doc-index-table {
+  padding-top: 1em;
 }
